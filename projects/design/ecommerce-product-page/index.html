@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" href="../../../favicon.ico" />
+  <link rel="stylesheet" href="styles.css">
+  <title>E-commerce product page</title>
+</head>
+
+<body>
+  <div class="container">
+    <header>
+      <nav>
+        <div class="logo">
+          <img class="menu-icon" src="./images/icon-menu.svg" alt="Menu icon">
+          <img class="logo-img" src="./images/logo.svg" alt="Logo" />
+        </div>
+        <div class="nav-menu">
+          <div class="mobile-close">
+            <img src="./images/icon-close.svg" alt="Close icon" class="close-icon">
+          </div>
+          <div class="nav-item">Collections</div>
+          <div class="nav-item">Men</div>
+          <div class="nav-item">Women</div>
+          <div class="nav-item">About</div>
+          <div class="nav-item">Contact</div>
+        </div>
+        <div class="nav-menu-backdrop"></div>
+        <div class="nav-cart">
+          <img class="cart-icon" src="./images/icon-cart.svg" alt="Cart icon" />
+          <img class="img-avatar" src="./images/image-avatar.png" alt="Avatar image" />
+        </div>
+        <div class="basket-modal">
+          <div class="basket-title">Cart</div>
+          <div class="basket-body">
+            <p id="cart-empty">Your cart is empty.</p>
+            <button id="btn-checkout" class="btn btn-primary btn-full-width">Checkout</button>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section class="slider">
+        <div class="slider-main">
+          <img id="slider-main-image" src="./images/image-product-1.jpg" alt="Product 1" />
+        </div>
+        <div id="slider-main" class="slider-thumbs">
+          <div class="slider-thumb">
+            <img id="main-thumb-1" class="active" src="./images/image-product-1-thumbnail.jpg" alt="Product 1 thumb" />
+          </div>
+          <div class="slider-thumb">
+            <img id="main-thumb-2" src="./images/image-product-2-thumbnail.jpg" alt="Product 2 thumb" />
+          </div>
+          <div class="slider-thumb">
+            <img id="main-thumb-3" src="./images/image-product-3-thumbnail.jpg" alt="Product 3 thumb" />
+          </div>
+          <div class="slider-thumb">
+            <img id="main-thumb-4" src="./images/image-product-4-thumbnail.jpg" alt="Product 4 thumb" />
+          </div>
+        </div>
+        <div id="slider-modal" class="slider-modal">
+          <div class="close">
+            <img src="./images/icon-close.svg" alt="Close icon">
+          </div>
+          <div class="slider-main">
+            <img class="prev-icon" src="./images/icon-previous.svg" alt="Previous icon">
+            <img id="modal-main-image" src="./images/image-product-1.jpg" alt="Product 1" />
+            <img class="next-icon" src="./images/icon-next.svg" alt="Next icon">
+          </div>
+          <div class="slider-thumbs">
+            <div class="slider-thumb">
+              <img id="modal-thumb-1" class="active" src="./images/image-product-1-thumbnail.jpg" alt="Product 1 thumb" />
+            </div>
+            <div class="slider-thumb">
+              <img id="modal-thumb-2" src="./images/image-product-2-thumbnail.jpg" alt="Product 2 thumb" />
+            </div>
+            <div class="slider-thumb">
+              <img id="modal-thumb-3" src="./images/image-product-3-thumbnail.jpg" alt="Product 3 thumb" />
+            </div>
+            <div class="slider-thumb">
+              <img id="modal-thumb-4" src="./images/image-product-4-thumbnail.jpg" alt="Product 4 thumb" />
+            </div>
+          </div>
+        </div>
+        <div class="slider-modal-backdrop"></div>
+      </section>
+      <section class="product-info">
+        <div class="subtitle">SNEAKER COMPANY</div>
+        <h2>Fall Limited Edition Sneakers</h2>
+        <div class="product-description">
+          <p>These low-profile sneakers are your perfect casual wear companion. Featuring a durable rubber outer sole, they'll withstand everything the weather can offer.</p>
+          <div class="price">
+            <h3>$125.00</h3>
+            <span class="discount">50%</span>
+          </div>
+          <div class="original-price">$250.00</div>
+        </div>
+        <div class="btn-group">
+          <div class="quantity">
+            <button class="btn btn-minus btn-icon">
+              <img src="./images/icon-minus.svg" alt="Minus icon" />
+            </button>
+            <button class="btn btn-quantity"> 0 </button>
+            <button class="btn btn-plus btn-icon">
+              <img src="./images/icon-plus.svg" alt="Plus icon" />
+            </button>
+          </div>
+          <button type="button" id="btn-add-to-cart" class="btn btn-primary">
+            <img class="product-cart-icon" src="./images/icon-cart.svg" alt="Cart icon" />
+            <span>Add to cart</span>
+          </button>
+        </div>
+      </section>
+    </main>
+    <div class="attribution"> Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by Kevin Huffman</a>. </div>
+  </div>
+  <script src="index.js"></script>
+</body>
+
+</html>
