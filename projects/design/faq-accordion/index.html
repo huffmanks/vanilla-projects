@@ -5,58 +5,67 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="icon" href="../../../favicon.ico" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&family=Ubuntu:wght@500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
   <title>FAQ Accordion Card</title>
 </head>
 
 <body>
-  <div class="container">
-    <div class="svg-container">
-      <img class="bg-desktop" src="images/bg-pattern-desktop.png" alt="" />
-      <img class="woman-online-desktop" src="images/illustration-woman-online-desktop.png" alt="" />
-      <img class="box-desktop" src="images/illustration-box-desktop.png" alt="" />
+  <main>
+    <div class="container">
+      <section class="image-section">
+        <div class="graphic-desktop">
+          <img src="images/online-graphic-desktop.png" />
+          <img class="box-graphic" src="images/box-desktop.png" />
+        </div>
+        <div class="graphic-mobile">
+          <img src="images/online-graphic-mobile.png" />
+        </div>
+      </section>
+      <section class="faq-section">
+        <h1>FAQ</h1>
+        <div class="accordion">
+          <div class="accordion-panel">
+            <div class="accordion-header">
+              <span class="question">How many team members can I invite?</span>
+              <img class="arrow" src="images/icon-arrow-down.svg" alt="arrow icon">
+            </div>
+            <div class="accordion-body">You can invite up to 10 members. The PRO plan offers unlimited.</div>
+          </div>
+          <div class="accordion-panel">
+            <div class="accordion-header">
+              <span class="question">What is the maximum file upload size?</span>
+              <img class="arrow" src="images/icon-arrow-down.svg" alt="arrow icon">
+            </div>
+            <div class="accordion-body">No more than 2GB. All files in your account must fit your allotted storage space.</div>
+          </div>
+          <div class="accordion-panel">
+            <div class="accordion-header">
+              <span class="question">How do I reset my password?</span>
+              <img class="arrow" src="images/icon-arrow-down.svg" alt="arrow icon">
+            </div>
+            <div class="accordion-body">Click the account settings icon and then fill out the information to reset your password.</div>
+          </div>
+          <div class="accordion-panel">
+            <div class="accordion-header">
+              <span class="question">Can I cancel my subscription?</span>
+              <img class="arrow" src="images/icon-arrow-down.svg" alt="arrow icon">
+            </div>
+            <div class="accordion-body">Yes, if you are unhappy with the service you can canel anytime.</div>
+          </div>
+          <div class="accordion-panel">
+            <div class="accordion-header">
+              <span class="question">Do you provide additional support?</span>
+              <img class="arrow" src="images/icon-arrow-down.svg" alt="arrow icon">
+            </div>
+            <div class="accordion-body">Yes, fill out the contact form and we will reach out to you.</div>
+          </div>
+        </div>
+      </section>
     </div>
-    <div class="faq-container">
-      <h3>FAQ</h3>
-      <div class="accordion">
-        <div class="accordion-panel">
-          <div class="accordion-header"> How many team members can I invite?<svg width="10" height="7" xmlns="http://www.w3.org/2000/svg">
-              <path d="M1 .799l4 4 4-4" stroke="#F47B56" stroke-width="2" fill="none" fill-rule="evenodd" />
-            </svg>
-          </div>
-          <div class="accordion-body"> You can invite up to 10 members. The PRO plan offers unlimited. </div>
-        </div>
-        <div class="accordion-panel">
-          <div class="accordion-header"> What is the maximum file upload size? <svg width="10" height="7" xmlns="http://www.w3.org/2000/svg">
-              <path d="M1 .799l4 4 4-4" stroke="#F47B56" stroke-width="2" fill="none" fill-rule="evenodd" />
-            </svg>
-          </div>
-          <div class="accordion-body"> No more than 2GB. All files in your account must fit your allotted storage space. </div>
-        </div>
-        <div class="accordion-panel">
-          <div class="accordion-header"> How do I reset my password? <svg width="10" height="7" xmlns="http://www.w3.org/2000/svg">
-              <path d="M1 .799l4 4 4-4" stroke="#F47B56" stroke-width="2" fill="none" fill-rule="evenodd" />
-            </svg>
-          </div>
-          <div class="accordion-body"> Click the account settings icon and then fill out the information to reset your password. </div>
-        </div>
-        <div class="accordion-panel">
-          <div class="accordion-header"> Can I cancel my subscription? <svg width="10" height="7" xmlns="http://www.w3.org/2000/svg">
-              <path d="M1 .799l4 4 4-4" stroke="#F47B56" stroke-width="2" fill="none" fill-rule="evenodd" />
-            </svg>
-          </div>
-          <div class="accordion-body"> Yes, if you are unhappy with the service you can canel anytime. </div>
-        </div>
-        <div class="accordion-panel">
-          <div class="accordion-header"> Do you provide additional support? <svg width="10" height="7" xmlns="http://www.w3.org/2000/svg">
-              <path d="M1 .799l4 4 4-4" stroke="#F47B56" stroke-width="2" fill="none" fill-rule="evenodd" />
-            </svg>
-          </div>
-          <div class="accordion-body"> Yes, fill out the contact form and we will reach out to you. </div>
-        </div>
-      </div>
-    </div>
-  </div>
+  </main>
   <script src="app.js"></script>
 </body>
 
