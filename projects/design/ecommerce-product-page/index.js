@@ -70,6 +70,10 @@ navCart.addEventListener('click', () => {
     }
 })
 
+checkoutButton.addEventListener('click', (e) => {
+    basketModal.style.display = 'none'
+})
+
 // Slider main
 sliderMainThumbs.forEach((sliderMainThumb) => {
     sliderMainThumb.addEventListener('click', (e) => {
@@ -110,6 +114,7 @@ sliderMainImage.addEventListener('click', () => {
         sliderModal.style.display = 'block'
         sliderModalBackdrop.style.display = 'block'
         modalMainImage.src = sliderMainImage.src
+        document.body.style.overflow = 'hidden'
     }
     if (sliderMainImage.src.includes('images/image-product-1.jpg')) {
         modalThumb1.classList.add('active')
@@ -173,11 +178,13 @@ sliderModalThumbs.forEach((sliderModalThumb) => {
 sliderModalBackdrop.addEventListener('click', () => {
     sliderModal.style.display = 'none'
     sliderModalBackdrop.style.display = 'none'
+    document.body.style.overflow = 'visible'
 })
 
 sliderModalClose.addEventListener('click', () => {
     sliderModal.style.display = 'none'
     sliderModalBackdrop.style.display = 'none'
+    document.body.style.overflow = 'visible'
 })
 
 prevButton.addEventListener('click', () => {
@@ -257,10 +264,13 @@ addToCartButton.addEventListener('click', () => {
     cartEmpty.style.display = 'none'
     checkoutButton.style.display = 'block'
     basketModal.style.display = 'block'
-})
 
-window.addEventListener('click', (e) => {
-    console.log(e.target)
+    const deleteIcon = newItem.querySelector('.delete-icon')
+
+    deleteIcon.addEventListener('click', () => {
+        newItem.remove()
+        cartEmpty.style.display = 'block'
+    })
 })
 
 window.addEventListener('resize', () => {
