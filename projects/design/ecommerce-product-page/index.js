@@ -47,6 +47,8 @@ menuIcon.addEventListener('click', () => {
     navMenuBackdrop.style.display = 'block'
     closeIcon.style.display = 'block'
     basketModal.style.display = 'none'
+    sliderModal.style.display = 'none'
+    document.body.style.overflow = 'visible'
 })
 
 closeIcon.addEventListener('click', () => {
@@ -111,6 +113,10 @@ sliderMainThumbs.forEach((sliderMainThumb) => {
 // Slider modal
 sliderMainImage.addEventListener('click', () => {
     if (sliderModal.style.display !== 'block') {
+        navMenu.style.display = 'none'
+        navMenuBackdrop.style.display = 'none'
+        closeIcon.style.display = 'none'
+        basketModal.style.display = 'none'
         sliderModal.style.display = 'block'
         sliderModalBackdrop.style.display = 'block'
         modalMainImage.src = sliderMainImage.src
@@ -262,9 +268,15 @@ addToCartButton.addEventListener('click', () => {
     `
     checkoutButton.parentNode.insertBefore(newItem, checkoutButton)
     cartEmpty.style.display = 'none'
+
+    navMenu.style.display = 'none'
+    navMenuBackdrop.style.display = 'none'
+    closeIcon.style.display = 'none'
+    sliderModal.style.display = 'none'
+    document.body.style.overflow = 'visible'
+
     checkoutButton.style.display = 'block'
     basketModal.style.display = 'block'
-
     const deleteIcon = newItem.querySelector('.delete-icon')
 
     deleteIcon.addEventListener('click', () => {
